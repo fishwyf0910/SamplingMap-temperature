@@ -48,6 +48,9 @@ g <- g + scale_shape_manual(values = c(21,21,21,21,21,21,21,21,21,21,21,21,21,21
 g <- g + scale_y_continuous(expand = expansion(mult=c(0,0))) 
 g <- g + scale_x_continuous(expand = expansion(add=c(0,0)))
 
+# 将 y 轴的范围限定为 0 到 90，可以使用 limits 参数，像这样：
+# g <- g + scale_y_continuous(limits = c(0, 90), expand = expansion(mult = c(0, 0)))
+
 # 隐藏坐标轴和网格线
 #g <- g + theme(
   axis.line    = element_blank(),
